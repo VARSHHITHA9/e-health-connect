@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-HealthConnect</title>
+    <style>
+        .chat-container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 5px solid #ccc;
+            background-color: #f9f9f9;
+            height: 440px;
+            overflow-y: auto;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            color: #2d6214;
+            font-weight: bold;
+        }
+
+        .bot-message {
+            color: #333;
+        }
+
+        .chat-input {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .chat-input input[type="text"] {
+            flex: 1;
+        }
+
+        .chat-input button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(198, 244, 244);">
+
+    <div style="background-color: aqua;">
+        <center>
+            <h1 style="font-family:'Courier New', Courier, monospace">e-HealthConnect</h1>
+            <h1 style="font-size: large; font-family:'Courier New', Courier, monospace;">
+                Empowering Underdeveloped Villages with Accessible Healthcare Services
+            </h1>
+        </center>
+    </div>
+
+    <br><br>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-message">
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <center>
+        <h3>Click on "Start" to Speak</h3>
+        <button style="transform: scale(2);" id="speakButton">START</button>
+    </center>
+
+    <script src="doc.js"></script>
+</body>
+
+</html>
